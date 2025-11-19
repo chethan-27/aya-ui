@@ -7,6 +7,9 @@ export default defineConfig({
         host: '0.0.0.0',
         port: 3000
     },
+    hmr: {
+        host: '13.60.217.81'
+    },
     plugins: [react()],
     resolve: {
         alias: {

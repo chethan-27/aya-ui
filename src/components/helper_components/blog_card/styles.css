@@ -1,0 +1,8 @@
+.custom-accent-badge {
+    background-color: rgba(0, 128, 128, 0.1);
+    color: teal;
+}
+
+.custom-accent-badge:hover {
+    background-color: rgba(0, 128, 128, 0.2);
+}

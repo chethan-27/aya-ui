@@ -1,0 +1,126 @@
+/* Section Wrapper */
+.hero-section {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Background Image + Overlay */
+.hero-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 40%;
+    height: 100%;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            rgba(37, 99, 235, 0.8),
+            /* from-primary/80 */
+            rgba(37, 99, 235, 0.6),
+            /* via-primary/60 */
+            rgba(245, 158, 11, 0.4)
+            /* to-accent/40 */
+        );
+}
+
+/* Content */
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 0 16px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Animation (fade-up) */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subheading */
+.hero-subheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.hero-icon {
+    width: 32px;
+    height: 32px;
+    color: #f59e0b;
+    /* accent color */
+    margin-right: 8px;
+}
+
+.hero-subtext {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Title */
+.hero-title {
+    font-size: 2.25rem;
+    /* text-4xl */
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+    .hero-title {
+        font-size: 3rem;
+        /* sm:text-5xl */
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        font-size: 3.75rem;
+        /* lg:text-6xl */
+    }
+}
+
+.highlight {
+    color: #f59e0b;
+    /* accent */
+}
+
+/* Description */
+.hero-description {
+    font-size: 1.25rem;
+    /* text-xl */
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+    max-width: 672px;
+    /* max-w-2xl */
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}

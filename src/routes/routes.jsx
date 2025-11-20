@@ -1,6 +1,7 @@
 
 import { Routes, Route } from 'react-router-dom';
 import Index from '../Index';
+import BlogsFromBrochure from '../pages/BlogsFromBrochure';
 import Blog from '../pages/Blog';
 import Login from '../pages/Login';
 import Profile from '../pages/Profile';
@@ -12,7 +13,7 @@ function ApplicationRoutes() {
             <Route path='/' element={<Index />} />
             <Route path='/about' element={<AboutUs />} />
             <Route path='/members' element={<ContactUs />} />
-            <Route path='/blogs' element={<Blog />} />
+            <Route path='/blogs' element={<BlogsFromBrochure />} />
             <Route path='/login' element={<Login />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/blogs/new' element={<BlogForm />} />

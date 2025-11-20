@@ -44,11 +44,11 @@ const Navbar = () => {
                     <div onClick={() => { navigate('/') }} className="nav-link">Home</div>
                     <div onClick={() => { navigate('/blogs') }} className="nav-link">Blog</div>
                     <div onClick={() => { navigate('/about') }} className="nav-link">About</div>
-                    <div onClick={scrollToContactUs} className="nav-link">Contact</div>
+                    {/* <div onClick={scrollToContactUs} className="nav-link">Contact</div> */}
                     <div onClick={() => { navigate('/members') }} className="nav-link">Members</div>
                 </nav>
 
-                <div className="cta">
+                {/* <div className="cta">
                     {user ? (
                         <>
                             <Button color="inherit" onMouseEnter={handleMenu} endIcon={<ArrowDropDownRoundedIcon />}>
@@ -76,7 +76,7 @@ const Navbar = () => {
                             Login
                         </button>
                     )}
-                </div>
+                </div> */}
 
                 <div className="mobile-menu-btn">
                     <button
@@ -93,47 +93,47 @@ const Navbar = () => {
                     <div onClick={() => { navigate('/') }} className="mobile-nav-link">Home</div>
                     <div onClick={() => { navigate('/blogs') }} className="mobile-nav-link">Blog</div>
                     <div onClick={() => { navigate('/about') }} className="mobile-nav-link">About</div>
-                    <div onClick={scrollToContactUs} className="mobile-nav-link">Contact</div>
+                    {/* <div onClick={scrollToContactUs} className="mobile-nav-link">Contact</div> */}
                     <div onClick={() => { navigate('/members') }} className="mobile-nav-link">Members</div>
                     {
-                        user ? (
-                            <div className="mobile-menu">
-                                <Button
-                                    className="mobile-donate-btn"
-                                    color="inherit"
-                                    onClick={handleMenu}
-                                    endIcon={<ArrowDropDownRoundedIcon />}
-                                >
-                                    {user.name}
-                                </Button>
-                                <Menu
-                                    anchorEl={anchorEl}
-                                    open={Boolean(anchorEl)}
-                                    onClose={handleClose}
-                                >
-                                    <MenuItem
-                                        component={Link}
-                                        to="/profile"
-                                        onClick={() => {
-                                            handleClose();
-                                            isMenuOpen && setIsMenuOpen(false);
-                                        }}
-                                    >Profile</MenuItem>
-                                    <MenuItem
-                                        onClick={() => {
-                                            logout();
-                                            handleClose();
-                                        }}
-                                    >
-                                        Logout
-                                    </MenuItem>
-                                </Menu>
-                            </div>
-                        ) : (
-                            <button className="mobile-donate-btn" onClick={() => navigate('/login')}>
-                                Login
-                            </button>
-                        )
+                        // user ? (
+                        //     <div className="mobile-menu">
+                        //         <Button
+                        //             className="mobile-donate-btn"
+                        //             color="inherit"
+                        //             onClick={handleMenu}
+                        //             endIcon={<ArrowDropDownRoundedIcon />}
+                        //         >
+                        //             {user.name}
+                        //         </Button>
+                        //         <Menu
+                        //             anchorEl={anchorEl}
+                        //             open={Boolean(anchorEl)}
+                        //             onClose={handleClose}
+                        //         >
+                        //             <MenuItem
+                        //                 component={Link}
+                        //                 to="/profile"
+                        //                 onClick={() => {
+                        //                     handleClose();
+                        //                     isMenuOpen && setIsMenuOpen(false);
+                        //                 }}
+                        //             >Profile</MenuItem>
+                        //             <MenuItem
+                        //                 onClick={() => {
+                        //                     logout();
+                        //                     handleClose();
+                        //                 }}
+                        //             >
+                        //                 Logout
+                        //             </MenuItem>
+                        //         </Menu>
+                        //     </div>
+                        // ) : (
+                        //     <button className="mobile-donate-btn" onClick={() => navigate('/login')}>
+                        //         Login
+                        //     </button>
+                        // )
                     }
                 </div>
             )}

@@ -69,11 +69,11 @@ export default function Footer() {
                         </Typography>
                         <div className="contact-item">
                             <MailIcon className="contact-icon" />
-                            <span>chethankv@amadaguryouthassociation.in</span>
+                            <span>amadaguryouthassociation@gmail.com</span>
                         </div>
                         <div className="contact-item">
                             <PhoneIcon className="contact-icon" />
-                            <span>+91 63-**-**83</span>
+                            <span>+91 8867599999</span>
                         </div>
                         <div className="contact-item">
                             <RoomIcon className="contact-icon" />

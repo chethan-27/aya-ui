@@ -30,6 +30,12 @@ const AboutUs = () => {
 
     const docs = [
         {
+            name: "broucher",
+            title: "Our Broucher",
+            type: "pdf",
+            link: "https://aya-files.s3.eu-north-1.amazonaws.com/aya_documents/AYA-2025-broucher.pdf"
+        },
+        {
             name: "AAKTA9775GE20251_signed_12A",
             title: "AAKTA9775GE20251_signed_12A",
             type: "pdf",
